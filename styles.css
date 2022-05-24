@@ -16,3 +16,18 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
+
+a {
+    position: 'relative';
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+
+}
