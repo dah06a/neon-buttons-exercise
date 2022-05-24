@@ -43,3 +43,11 @@ a:hover {
     box-shadow: 0 0 5px var(--neon-blue), 0 0 25px var(--neon-blue), 0 0 50px var(--neon-blue), 0 0 200px var(--neon-blue);
     -webkit-box-reflect: below 3px linear-gradient(transparent, var(--neon-black));
 }
+
+a:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+a:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
