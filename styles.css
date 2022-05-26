@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+/* Color Variables */
 :root {
     --neon-dark: #050801;
     --neon-black: #0005;
-    --neon-blue: #03e9f4;
+    --neon-start: #03e9f4;
 }
 
+/* Default Page Settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Center Buttons */
 body {
     display: flex;
     justify-content: center;
@@ -23,46 +26,60 @@ body {
     font-weight: bold;
 }
 
+/* Basic Link Styling and Hover */
 a {
     position: 'relative';
     display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0px;
-    color: var(--neon-blue);
+    padding: 20px 20px;
+    color: var(--neon-start);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
+    margin: 20px;
 }
 
 a:hover {
     background: #03e9f4;
     color: #050801;
-    box-shadow: 0 0 5px var(--neon-blue), 0 0 25px var(--neon-blue), 0 0 50px var(--neon-blue), 0 0 200px var(--neon-blue);
+    box-shadow: 0 0 5px var(--neon-start), 0 0 25px var(--neon-start), 0 0 50px var(--neon-start), 0 0 200px var(--neon-start);
     -webkit-box-reflect: below 3px linear-gradient(transparent, var(--neon-black));
 }
 
+/* Color Variations */
 a:nth-child(1) {
-    filter: hue-rotate(270deg);
-}
-
-a:nth-child(2) {
-    filter: hue-rotate(110deg);
-}
-
-a:nth-child(3) {
     filter: hue-rotate(0deg);
 }
 
+a:nth-child(2) {
+    filter: hue-rotate(60deg);
+}
+
+a:nth-child(3) {
+    filter: hue-rotate(120deg);
+}
+
+a:nth-child(4) {
+    filter: hue-rotate(180deg);
+}
+
+a:nth-child(5) {
+    filter: hue-rotate(240deg);
+}
+
+a:nth-child(6) {
+    filter: hue-rotate(300deg);
+}
+
+/* Border Animation Effect */
 a span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--neon-blue));
+    background: linear-gradient(90deg, transparent, var(--neon-start));
     animation: animate1 1s linear infinite;
 }
 
@@ -82,7 +99,7 @@ a span:nth-child(2) {
     right: 0;
     width: 1px;
     height: 100%;
-    background: linear-gradient(90deg, transparent, var(--neon-blue));
+    background: linear-gradient(90deg, transparent, var(--neon-start));
     animation: animate2 1s linear infinite;
     animation-delay: 0.25s;
 }
@@ -103,7 +120,7 @@ a span:nth-child(3) {
     right: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(270deg, transparent, var(--neon-blue));
+    background: linear-gradient(270deg, transparent, var(--neon-start));
     animation: animate3 1s linear infinite;
     animation-delay: 0.5s;
 }
@@ -124,7 +141,7 @@ a span:nth-child(4) {
     left: 0;
     width: 1px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, var(--neon-blue));
+    background: linear-gradient(360deg, transparent, var(--neon-start));
     animation: animate4 1s linear infinite;
     animation-delay: 0.75s;
 }
